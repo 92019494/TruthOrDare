@@ -1,0 +1,6 @@
+framework module Pods_TruthOrDareTests {
+  umbrella header "Pods-TruthOrDareTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
