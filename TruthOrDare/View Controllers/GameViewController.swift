@@ -91,14 +91,14 @@ class GameViewController: UIViewController {
                 questionLabel.text = "\(truthQuestionsTwo[ranNum])?"
                 truthQuestions.append(truthQuestionsTwo[ranNum])
                 truthQuestionsTwo.remove(at: ranNum)
-                print("using truth list two")
+                //print("using truth list two")
 
             } else {
                 let ranNum = Int.random(in: 0 ..< truthQuestions.count)
                 questionLabel.text = "\(truthQuestions[ranNum])?"
                 truthQuestionsTwo.append(truthQuestions[ranNum])
                 truthQuestions.remove(at: ranNum)
-                print("using truth list one")
+                //print("using truth list one")
 
             }
             toggleButtons()
@@ -118,13 +118,13 @@ class GameViewController: UIViewController {
                 questionLabel.text = (dareActionsTwo[ranNum])
                 dareActions.append(dareActionsTwo[ranNum])
                 dareActionsTwo.remove(at: ranNum)
-                print("using dare list two")
+                //print("using dare list two")
             } else {
                 let ranNum = Int.random(in: 0 ..< dareActions.count)
                 questionLabel.text = dareActions[ranNum]
                 dareActionsTwo.append(dareActions[ranNum])
                 dareActions.remove(at: ranNum)
-                print("using dare list one")
+                //print("using dare list one")
 
             }
         
@@ -172,8 +172,6 @@ class GameViewController: UIViewController {
       
     }
     
-    
-    
     func toggleButtons(){
         if continueButton.isHidden { continueButton.isHidden = false }
         else {continueButton.isHidden = true}
@@ -187,14 +185,4 @@ class GameViewController: UIViewController {
         if drinkButton.isHidden { drinkButton.isHidden = false }
         else {drinkButton.isHidden = true}
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
