@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		02009C82DE85A86C5039A1A1 /* Pods_TruthOrDareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FDA3FD84B9F77CC377E5A0 /* Pods_TruthOrDareTests.framework */; };
 		27E1AD1E481CDF3439D72AD4 /* Pods_TruthOrDare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5FE35F224C767E58567EB6 /* Pods_TruthOrDare.framework */; };
+		921319D523EADBFB000D8363 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921319D423EADBFB000D8363 /* Data.swift */; };
+		921319D823EAE7D0000D8363 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921319D723EAE7CF000D8363 /* UIViewController.swift */; };
+		921319DA23EB0B01000D8363 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 921319D923EB0B01000D8363 /* GoogleService-Info.plist */; };
+		921319DD23EB13EC000D8363 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921319DC23EB13EC000D8363 /* Constants.swift */; };
 		92656F0222871F6C00C826E3 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92656F0122871F6C00C826E3 /* appicon.png */; };
-		92656F1622899AE600C826E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92656F1522899AE500C826E3 /* GoogleService-Info.plist */; };
-		92656F1722899AE600C826E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92656F1522899AE500C826E3 /* GoogleService-Info.plist */; };
-		92656F1822899AE600C826E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92656F1522899AE500C826E3 /* GoogleService-Info.plist */; };
 		92A54D1022917DA70058A1EB /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A54D0F22917DA60058A1EB /* InstructionsViewController.swift */; };
 		92CB2165228507C600C76F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CB2164228507C600C76F05 /* AppDelegate.swift */; };
 		92CB216A228507C700C76F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CB2168228507C700C76F05 /* Main.storyboard */; };
@@ -52,10 +53,13 @@
 		648E106A98BC84F17F7D86D0 /* Pods-TruthOrDare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.release.xcconfig"; sourceTree = "<group>"; };
 		727454D3E657CEFDA6FB132A /* Pods-TruthOrDareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareUITests/Pods-TruthOrDareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BE5FCD43293F200B393530D /* Pods-TruthOrDareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareUITests/Pods-TruthOrDareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		921319D423EADBFB000D8363 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		921319D723EAE7CF000D8363 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		921319D923EB0B01000D8363 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		921319DC23EB13EC000D8363 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		92656F0122871F6C00C826E3 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
-		92656F1522899AE500C826E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92A54D0F22917DA60058A1EB /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
-		92CB2161228507C600C76F05 /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CB2161228507C600C76F05 /* Truth Or Dare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Truth Or Dare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CB2164228507C600C76F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CB2169228507C700C76F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92CB216B228507D400C76F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +120,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		921319D323EADBAD000D8363 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92CB21922285099900C76F05 /* MenuViewController.swift */,
+				92CB219422850CCA00C76F05 /* PlayerPickerViewController.swift */,
+				92CB219622850D7F00C76F05 /* GameViewController.swift */,
+				92CB2198228513CC00C76F05 /* EnterNamesViewController.swift */,
+				92A54D0F22917DA60058A1EB /* InstructionsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		921319D623EAE7B9000D8363 /* HelperMethods */ = {
+			isa = PBXGroup;
+			children = (
+				921319D723EAE7CF000D8363 /* UIViewController.swift */,
+			);
+			path = HelperMethods;
+			sourceTree = "<group>";
+		};
 		92CB2158228507C600C76F05 = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +155,7 @@
 		92CB2162228507C600C76F05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92CB2161228507C600C76F05 /* TruthOrDare.app */,
+				92CB2161228507C600C76F05 /* Truth Or Dare.app */,
 				92CB2175228507D600C76F05 /* TruthOrDareTests.xctest */,
 				92CB2180228507D600C76F05 /* TruthOrDareUITests.xctest */,
 			);
@@ -141,18 +165,17 @@
 		92CB2163228507C600C76F05 /* TruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
-				92656F1522899AE500C826E3 /* GoogleService-Info.plist */,
+				921319DC23EB13EC000D8363 /* Constants.swift */,
+				921319D623EAE7B9000D8363 /* HelperMethods */,
+				921319D323EADBAD000D8363 /* View Controllers */,
 				92CB2164228507C600C76F05 /* AppDelegate.swift */,
 				92CB2168228507C700C76F05 /* Main.storyboard */,
-				92CB216B228507D400C76F05 /* Assets.xcassets */,
 				92CB216D228507D400C76F05 /* LaunchScreen.storyboard */,
+				92CB216B228507D400C76F05 /* Assets.xcassets */,
+				921319D923EB0B01000D8363 /* GoogleService-Info.plist */,
 				92CB2170228507D400C76F05 /* Info.plist */,
 				92656F0122871F6C00C826E3 /* appicon.png */,
-				92CB21922285099900C76F05 /* MenuViewController.swift */,
-				92CB219422850CCA00C76F05 /* PlayerPickerViewController.swift */,
-				92CB219622850D7F00C76F05 /* GameViewController.swift */,
-				92CB2198228513CC00C76F05 /* EnterNamesViewController.swift */,
-				92A54D0F22917DA60058A1EB /* InstructionsViewController.swift */,
+				921319D423EADBFB000D8363 /* Data.swift */,
 			);
 			path = TruthOrDare;
 			sourceTree = "<group>";
@@ -204,7 +227,7 @@
 			);
 			name = TruthOrDare;
 			productName = TruthOrDare;
-			productReference = 92CB2161228507C600C76F05 /* TruthOrDare.app */;
+			productReference = 92CB2161228507C600C76F05 /* Truth Or Dare.app */;
 			productType = "com.apple.product-type.application";
 		};
 		92CB2174228507D600C76F05 /* TruthOrDareTests */ = {
@@ -293,9 +316,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921319DA23EB0B01000D8363 /* GoogleService-Info.plist in Resources */,
 				92656F0222871F6C00C826E3 /* appicon.png in Resources */,
 				92CB216F228507D400C76F05 /* LaunchScreen.storyboard in Resources */,
-				92656F1622899AE600C826E3 /* GoogleService-Info.plist in Resources */,
 				92CB216C228507D400C76F05 /* Assets.xcassets in Resources */,
 				92CB216A228507C700C76F05 /* Main.storyboard in Resources */,
 			);
@@ -305,7 +328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92656F1722899AE600C826E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +335,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92656F1822899AE600C826E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +438,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921319D523EADBFB000D8363 /* Data.swift in Sources */,
 				92A54D1022917DA70058A1EB /* InstructionsViewController.swift in Sources */,
 				92CB219722850D7F00C76F05 /* GameViewController.swift in Sources */,
 				92CB2199228513CD00C76F05 /* EnterNamesViewController.swift in Sources */,
 				92CB21932285099900C76F05 /* MenuViewController.swift in Sources */,
 				92CB219522850CCA00C76F05 /* PlayerPickerViewController.swift in Sources */,
+				921319D823EAE7D0000D8363 /* UIViewController.swift in Sources */,
 				92CB2165228507C600C76F05 /* AppDelegate.swift in Sources */,
+				921319DD23EB13EC000D8363 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,16 +623,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46PM3974Y4;
+				DEVELOPMENT_TEAM = 42YDM682HW;
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.TruthOrDare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emeraldappdevelopers.TruthOrDare;
+				PRODUCT_NAME = "Truth Or Dare";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -618,16 +643,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46PM3974Y4;
+				DEVELOPMENT_TEAM = 42YDM682HW;
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.TruthOrDare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emeraldappdevelopers.TruthOrDare;
+				PRODUCT_NAME = "Truth Or Dare";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

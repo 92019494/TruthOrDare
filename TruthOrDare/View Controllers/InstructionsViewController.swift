@@ -1,30 +1,27 @@
 //
-//  MenuViewController.swift
+//  InstructionsViewController.swift
 //  TruthOrDare
 //
-//  Created by Anthony on 10/05/19.
+//  Created by Anthony on 20/05/19.
 //  Copyright © 2019 Anthony. All rights reserved.
 //
 
 import UIKit
-import GoogleMobileAds
 
-class MenuViewController: UIViewController {
+class InstructionsViewController: UIViewController {
 
-
+    var numberOfPlayers: Int = 0
+    var playerOneName: String = ""
+    var playerTwoName: String = ""
+    var playerThreeName: String = ""
+    var playerFourName: String = ""
+    var playerFiveName: String = ""
+    var playerSixName: String = ""
     
-    @IBOutlet weak var bannerView: GADBannerView!
-    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        playButton.layer.cornerRadius = playButton.bounds.width * 0.2
 
         // Do any additional setup after loading the view.
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.adSize = kGADAdSizeBanner
-        bannerView.load(GADRequest())
     }
     
 
@@ -37,5 +34,11 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func backToGame(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
+    
 }

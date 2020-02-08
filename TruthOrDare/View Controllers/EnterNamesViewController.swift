@@ -26,42 +26,106 @@ class EnterNamesViewController: UIViewController {
     var playerFiveName: String = ""
     var playerSixName: String = ""
 
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the
+        setupTextField()
+        setupBanner()
+        setupButton()
+        setPlayerLabelText()
+        addGestureRecognizer()
+        
+                
+    }
+    
+    func setupTextField(){
+        playerTextField.layer.borderColor = UIColor.systemPink.cgColor
+        playerTextField.layer.borderWidth = 3
+        playerTextField.layer.cornerRadius = 10
+    }
+    
+    func setupButton(){
+        continueButton.layer.cornerRadius = 15
+    }
+    
+    func addGestureRecognizer(){
         let tapper = UITapGestureRecognizer(target: self, action:#selector(DismissKeyboard))
         tapper.cancelsTouchesInView = false
         view.addGestureRecognizer(tapper)
-        
-        continueButton.layer.cornerRadius = continueButton.bounds.width * 0.15
-
+    }
+    
+    func setPlayerLabelText(){
         playerLabel.text = "Player 1"
-        
+    }
+    
+    func setupBanner(){
         // banner setup
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = Constants.bannerID
         bannerView.rootViewController = self
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(GADRequest())
-        
+
     }
     
+    func validateTextField() -> Bool {
+        if playerTextField.text != "" {
+            return true
+        }
+        return false
+    }
     
     @IBAction func Continue(_ sender: Any) {
         
+        if validateTextField() {
+            switch playerLabel.text {
+            case "Player 1":
+                playerOneName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+                playerLabel.text = "Player 2"
+            case "Player 2":
+                playerTwoName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+                playerLabel.text = "Player 3"
+            case "Player 3":
+                playerThreeName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+                playerLabel.text = "Player 4"
+            case "Player 4":
+                playerFourName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+                playerLabel.text = "Player 5"
+            case "Player 5":
+                playerFiveName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+                playerLabel.text = "Player 6"
+            case "Player 6":
+                playerSixName = playerTextField.text!
+                playerNamesEntered += 1
+                CheckIfNamesHaveBeenEntered()
+            default:
+                break
+            }
+            playerTextField.text = ""
+        } else {
+            // present text field alert
+        }
         
         if playerLabel.text == "Player 1" {
             if playerTextField.text != "" {
-                if playerTextField.text!.count < 11 {
                 playerOneName = playerTextField.text!
                 playerNamesEntered += 1
                 CheckIfNamesHaveBeenEntered()
                 playerLabel.text = "Player 2"
                 playerTextField.text = ""
-                }
             }
         }
         

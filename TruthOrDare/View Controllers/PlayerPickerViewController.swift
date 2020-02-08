@@ -25,21 +25,27 @@ class PlayerPickerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        oneButton.layer.cornerRadius = oneButton.bounds.width * 0.15
-        twoButton.layer.cornerRadius = twoButton.bounds.width * 0.15
-        threeButton.layer.cornerRadius = threeButton.bounds.width * 0.15
-        fourButton.layer.cornerRadius = fourButton.bounds.width * 0.15
-        fiveButton.layer.cornerRadius = fiveButton.bounds.width * 0.15
-        sixButton.layer.cornerRadius = sixButton.bounds.width * 0.15
+        setupButtons()
+        setupBanner()
+        
+    }
+    
+    func setupButtons(){
+        oneButton.layer.cornerRadius = 15
+        twoButton.layer.cornerRadius = 15
+        threeButton.layer.cornerRadius = 15
+        fourButton.layer.cornerRadius = 15
+        fiveButton.layer.cornerRadius = 15
+        sixButton.layer.cornerRadius = 15
+    }
 
-        // banner setup
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+    func setupBanner(){
+        bannerView.adUnitID = Constants.bannerID
         bannerView.rootViewController = self
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(GADRequest())
     }
     
-
     @IBAction func OnePlayer(_ sender: Any) {
         numberOfPlayers = 1
         performSegue(withIdentifier: "toEnterNames", sender: self)
